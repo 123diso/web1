@@ -11,7 +11,15 @@ function sumarEdades(personas) {
 }
 console.log(sumarEdades(personas)); 
 //...conforeach 
+function ConForEach(personas) {
+let suma = 0;
+personas.forEach(persona => {
+    suma += persona.edad;
+});
+return suma;
+}
 
+console.log("Suma con forEach:", ConForEach(personas));
 
 
 //segundo
